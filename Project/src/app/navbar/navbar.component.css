@@ -1,0 +1,84 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dce38289;
+  }
+  
+  .logo {
+    padding-left: 10px;
+  }
+
+  .logo img {
+    height: 100%;
+    max-height: 60px; /* Adjust as needed */
+    object-fit: contain; /* To maintain the aspect ratio of the image */
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-right: 10px;
+    margin-top: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.router-link-active {
+    background-color: aliceblue;
+  }
+
+  .navbar .nav-links .active {
+    background-color: aliceblue;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      right: 0;
+      height: calc(100vh - 100px); /* Adjust 60px to the height of your main navigation */
+      top: 60px; /* Adjust to the height of your main navigation */
+      background-color: #dce382af;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translateX(110%);
+      width: 50%;
+      transition: transform 0.3s ease-in-out;
+      z-index: 1000;
+      padding: 10px;
+    }
+
+    .nav-links li {
+      margin: 0px 0; /* Decrease the space between links */
+    }
+  
+    .nav-open {
+      transform: translateX(0);
+    }
+
+    .icon img {
+        height: 100%;
+        max-height: 30px; /* Adjust as needed */
+        object-fit: contain; /* To maintain the aspect ratio of the image */
+        margin-right: 30px;
+        transition: max-height 0.3s ease-in-out; /* Add transition for smooth size decrease */
+      }
+      
+      .icon img:hover {
+        max-height: 25px; /* Decrease size on hover */
+      }
+      
+      /* .icon.open img {
+        content: url('/assets/close.png');
+      } */
+  }
