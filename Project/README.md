@@ -16,7 +16,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Deployment
  
-This project is deployed on GitHub Pages. You can view the live project [here](https://chiranjiprathyusha05.github.io/bppfindia/).
+This project is deployed on GitHub Pages. You can view the live project [here](https://chiranjiprathyusha05.github.io/bppfindia/Project/).
 
 ## Running unit tests
 
