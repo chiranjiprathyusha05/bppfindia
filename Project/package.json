@@ -7,7 +7,7 @@
     "build": "ng build --base-href \"https://bppfindia.org/\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "npx angular-cli-ghpages --dir=dist/project/browser --cname=bppfindia.org"
+    "deploy": "npx angular-cli-ghpages --dir=dist/project/browser --branch=gh-pages --cname=bppfindia.org"
   },
   "private": true,
   "dependencies": {
