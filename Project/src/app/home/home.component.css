@@ -269,53 +269,55 @@ p, h2,b{
   margin-top: 10px; 
 }
 
-@media(max-width: 500px) and (min-width: 400px) {
+@media (max-width: 490px) and (min-width: 320px) {
   .top-image {
-    height: 300px;
+    height: 250px;
   }
   .parent {
-    height: 690px;
+    height: 550px;
     flex-direction: column;
   }
-
+ 
   .content {
-    height: 530px;
+    height: auto;
   }
-
+ 
   .content h1{
     margin-bottom: 0;
     padding-bottom: 0;
     padding-top: 20px;
   }
-
+ 
   .para{
     padding-top: 5px;
     padding: 0;
+    font-size: small;
   }
-
+ 
   .parent2 {
-    height: 650px;
+    height: 500px;
     flex-direction: column;
   }
-
+ 
   .title-container {
-    display: none; 
+    display: none;
   }
-
+ 
   .text-container,
   .text-container2 {
     width: 80%;
-    left: 9%;
+    left: 10%;
     height: auto;
+    font-size: small;
   }
-
+ 
   .image-container,
   .image-container2 {
     height: fit-content;
     width: 100%;
-    left: 9%;
+    left: 15%;
   }
-
+ 
   .hover-text {
     position: absolute;
     top: 50%;
@@ -323,22 +325,117 @@ p, h2,b{
     background-color: transparent;
     color: rgb(255, 255, 255);
     opacity: transparent;
-    font-size: 20px;
-  
+    font-size: 15px;
+ 
   }
-
+ 
   .chakra img {
     width: 50%; /* Increase the width for smaller screens */
     height: 15%; /* Let the browser calculate the height */
     margin-top: 0;
   }
-
+ 
   .name {
     margin-top: 30px;
     font-size: 1.5em; /* Decrease the font size for smaller screens */
     margin-bottom: -5px;
   }
-
+ 
+  .item h2{
+    font-size: 1em; /* Decrease the font size for smaller screens */
+  }
+  .item p {
+    font-size: 0.8em; /* Decrease the font size for smaller screens */
+  }
+ 
+  .my-h2{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  .h1{
+    font-size: 1.2em;
+  }
+  .h2{
+    font-size: 0em;
+  }
+  .p{
+    font-size: 0em;
+  }
+ 
+}
+ 
+ 
+ 
+@media(max-width: 768px) and (min-width: 490px) {
+  .top-image {
+    height: 300px;
+  }
+  .parent {
+    height: 730px;
+    flex-direction: column;
+  }
+ 
+  .content {
+    height: auto;
+  }
+ 
+  .content h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+ 
+  .para{
+    padding-top: 5px;
+    padding: 0;
+  }
+ 
+  .parent2 {
+    height: 690px;
+    flex-direction: column;
+  }
+ 
+  .title-container {
+    display: none;
+  }
+ 
+  .text-container,
+  .text-container2 {
+    width: 80%;
+    left: 9%;
+    height: auto;
+  }
+ 
+  .image-container,
+  .image-container2 {
+    height: fit-content;
+    width: 100%;
+    left: 9%;
+  }
+ 
+  .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    opacity: transparent;
+    font-size: 25px;
+ 
+  }
+ 
+  .chakra img {
+    width: 50%; /* Increase the width for smaller screens */
+    height: 15%; /* Let the browser calculate the height */
+    margin-top: 0;
+  }
+ 
+  .name {
+    margin-top: 30px;
+    font-size: 1.5em; /* Decrease the font size for smaller screens */
+    margin-bottom: -5px;
+  }
+ 
   .item h2{
     font-size: 1em; /* Decrease the font size for smaller screens */
   }
@@ -346,8 +443,8 @@ p, h2,b{
     font-size: 0.8em; /* Decrease the font size for smaller screens */
   }
 }
-
-@media (max-width: 1024px) and (min-width: 500px) {
+ 
+@media (max-width: 1024px) and (min-width: 770px) {
   .top-image {
     height: 300px;
   }
@@ -356,7 +453,7 @@ p, h2,b{
     align-items: space-between;
     height: 820px;
   }
-
+ 
   .content {
     height: 320px;
   }
@@ -365,25 +462,25 @@ p, h2,b{
     align-items: space-between;
     height: 760px;
   }
-
+ 
   .title-container {
-    display: none; 
+    display: none;
   }
-
+ 
   .text-container,
   .text-container2 {
     width: 80%;
     left: 10%;
     height: auto;
   }
-
+ 
   .image-container,
   .image-container2 {
     height: fit-content;
     width: 100%;
     left: 7%;
   }
-
+ 
   .hover-text {
     position: absolute;
     top: 50%;
@@ -392,21 +489,21 @@ p, h2,b{
     color: rgb(255, 255, 255);
     opacity: transparent;
     font-size: 30px;
-  
+ 
   }
-
+ 
   .chakra img {
     width: 50%; /* Increase the width for smaller screens */
     height: 15%; /* Let the browser calculate the height */
     margin-top: 0;
   }
-
+ 
   .name {
     margin-top: 30px;
     font-size: 1.5em; /* Decrease the font size for smaller screens */
     margin-bottom: -5px;
   }
-
+ 
   .item h2{
     font-size: 1em; /* Decrease the font size for smaller screens */
   }
