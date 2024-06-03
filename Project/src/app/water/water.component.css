@@ -25,11 +25,13 @@ body{
 }
 
 .imgSlider{
-    width:100%;
+    width:80%;
     height:620px;
     background-size: 100% 100%;
     box-shadow: #959DA5 0px 8px 24px;
     animation: changeImage 40s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes changeImage{

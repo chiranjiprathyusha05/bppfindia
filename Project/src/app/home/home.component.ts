@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+  onViewDetails() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'auto'
+    });
+  }
 }
