@@ -121,12 +121,12 @@ p, h2,b{
 .hover-text {
   position: absolute;
   top: 45%;
-  left: 13%;
+  left: 17%;
   background-color: transparent;
   color: rgb(255, 255, 255);
   opacity: transparent;
   font-size: 50px;
-
+  text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
 }
 
 .title-container {
@@ -321,12 +321,12 @@ p, h2,b{
   .hover-text {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 12%;
     background-color: transparent;
     color: rgb(255, 255, 255);
     opacity: transparent;
     font-size: 15px;
- 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
  
   .chakra img {
@@ -421,7 +421,7 @@ p, h2,b{
     color: rgb(255, 255, 255);
     opacity: transparent;
     font-size: 25px;
- 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
  
   .chakra img {
@@ -451,7 +451,7 @@ p, h2,b{
   .parent{
     flex-direction: column;
     align-items: space-between;
-    height: 820px;
+    height: 900px;
   }
  
   .content {
@@ -460,7 +460,7 @@ p, h2,b{
   .parent2 {
     flex-direction: column;
     align-items: space-between;
-    height: 760px;
+    height: 820px;
   }
  
   .title-container {
@@ -489,7 +489,7 @@ p, h2,b{
     color: rgb(255, 255, 255);
     opacity: transparent;
     font-size: 30px;
- 
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   }
  
   .chakra img {
