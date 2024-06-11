@@ -1,16 +1,20 @@
-<nav class="navbar">
-    <div class="logo">
+ <nav class="navbar">
+    <div class="nav-logo">
       <img src="/assets/logo.png" alt="Logo">
     </div>
-    <div class="icon" [class.open]="navOpen" *ngIf="isMobile" (click)="toggleNav()">
+    <!-- <div class="icon" [class.open]="navOpen" *ngIf="isMobile" (click)="toggleNav()">
         <img src="/assets/more.png" alt="Icon">
-    </div>
-    <ul class="nav-links" [class.nav-open]="navOpen">
-      <li><a routerLink="/home" routerLinkActive="active" (click)="toggleNav()">Home</a></li>
-      <li><a routerLink="/forestation" routerLinkActive="active" (click)="toggleNav()">Forestation</a></li>
-      <li><a routerLink="/Water" routerLinkActive="active" (click)="toggleNav()">Water Harvesting</a></li>
-      <li><a routerLink="/education" routerLinkActive="active" (click)="toggleNav()">Education</a></li>
-      <li><a routerLink="/health" routerLinkActive="active" (click)="toggleNav()">Health</a></li>
-      <li><a routerLink="/agriculture" routerLinkActive="active" (click)="toggleNav()">Agriculture</a></li>
+    </div> -->
+    <ul class="nav-links" [class.active]="isSidebarActive">
+      <li><a routerLink="/home" routerLinkActive="active" (click)="closeSidebar()">Home</a></li>
+      <li><a routerLink="/forestation" routerLinkActive="active" (click)="closeSidebar()">Forestation</a></li>
+      <li><a routerLink="/Water" routerLinkActive="active" (click)="closeSidebar()">Water Harvesting</a></li>
+      <li><a routerLink="/education" routerLinkActive="active" (click)="closeSidebar()">Education</a></li>
+      <li><a routerLink="/health" routerLinkActive="active" (click)="closeSidebar()">Health</a></li>
+      <li><a routerLink="/agriculture" routerLinkActive="active" (click)="closeSidebar()">Agriculture</a></li>
     </ul>
+    <button class="nav-toggle" (click)="toggleSidebar()">
+      &#9776;
+    </button>
   </nav>
+  <div class="overlay" [class.active]="isSidebarActive" (click)="closeSidebar()"></div>

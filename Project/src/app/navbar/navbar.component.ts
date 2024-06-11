@@ -1,23 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component} from '@angular/core';
+ 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
-  navOpen = false;
-  isMobile = window.innerWidth < 768;
-
-  constructor() { }
-
-  ngOnInit() {
-    window.addEventListener('resize', () => {
-      this.isMobile = window.innerWidth < 768;
-    });
+export class NavbarComponent {
+  isSidebarActive: boolean = false;
+ 
+  toggleSidebar() {
+    this.isSidebarActive = !this.isSidebarActive;
   }
-
-  toggleNav() {
-    this.navOpen = !this.navOpen;
+ 
+  closeSidebar() {
+    this.isSidebarActive = false;
   }
 }
