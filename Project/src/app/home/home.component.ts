@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
@@ -13,4 +15,12 @@ export class HomeComponent {
       behavior: 'auto'
     });
   }
+  
+  constructor(private cdr: ChangeDetectorRef) { }
+
+  ngOnInit(): void {
+    // Initialization logic here
+    this.cdr.detectChanges();
+  }
+
 }

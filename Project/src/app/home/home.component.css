@@ -371,7 +371,7 @@ p, h2,b{
     height: 300px;
   }
   .parent {
-    height: 730px;
+    height: 780px;
     flex-direction: column;
   }
  
@@ -416,11 +416,12 @@ p, h2,b{
   .hover-text {
     position: absolute;
     top: 50%;
-    left: 10%;
     background-color: transparent;
     color: rgb(255, 255, 255);
     opacity: transparent;
     font-size: 25px;
+    justify-content: center;
+    align-items: center;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
  
