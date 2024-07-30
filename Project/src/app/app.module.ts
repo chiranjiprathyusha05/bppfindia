@@ -21,6 +21,7 @@ const routes: Routes = [
   { path: 'forestation', component: ForestationComponent },
   { path: 'health', component: HealthComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
+  { path: '**', redirectTo: '/home', pathMatch: 'full' } // Wildcard route for a 404 page
 ];
 
 @NgModule({
